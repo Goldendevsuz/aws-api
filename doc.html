@@ -1,0 +1,572 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AWS Cloud Products API Documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="scribbler-global.css">
+    <link rel="stylesheet" href="scribbler-doc.css">
+    <link rel="author" href="humans.txt">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo">AWS <span class="logo__thin">Doc</span></h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="https://github.com/Abdulmajid1616/"  target="_blank"  class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+        <ul>
+          <li class="js-btn selected">Get Started</li>
+          <li class="js-btn">Installations</li>
+          <li class="js-btn">Guide updates</li>
+          <li class="js-btn">Links</li>
+          <li class="js-btn">JSON Response</li>
+        </ul>
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Getting started</h3>
+          <p>Welcome to the AWS API Guide!
+
+
+This guide is designed to help beginners and experienced developers discover what AWS API has to offer. In addition to detailed explanations, you will find plenty of code examples in all of the API Libraries.
+
+
+Before we begin with the guide, please take a look at these two sections to have a better idea about how it is structured:</p></section>
+          <section class="js-section">
+          <h3 class="section__title">Installations</h3>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                $ pip install fake-useragent</br>
+$ pip install requests
+              </code>
+            </pre>
+          </div>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Guide updates</h3>
+          <p>One final consideration before ending this welcome: We’re always working on improving the iLovePDF API and fixing issues to ensure the best user experience. That’s why we are constantly reviewing and updating our guides to keep you well informed at all times. In the meantime, if you have any questions or comments, please contact us.</p>
+          <hr />
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Links</h3>
+          <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        GET /All Products
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Filter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+          <th scope="row">1</th>
+          <td><a href="https://clck.ru/rdPJP" target="_blank" class="link link--light">All services</a></td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        GET /All Free Tire Type Products
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+       <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Free Tire Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+          <th scope="row">1</th>
+          <td><a href="https://clck.ru/rdNET" target="_blank" class="link link--light">12-months-free</a></td>         </tr>
+<tr>
+          <th scope="row">2</th>
+          <td><a href="https://clck.ru/rdNCw" target="_blank" class="link link--light">Always-free</a></td>         </tr>
+<tr>
+          <th scope="row">3</th>
+          <td><a href="https://clck.ru/rdNAz" target="_blank" class="link link--light">Free-trial</a></td>         </tr>
+  </tbody>
+</table>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         GET /Products by Categories
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Product Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+          <th scope="row">1</th>
+          <td><a href="https://clck.ru/rdMyz" target="_blank" class="link link--light">Analytics</a></td>         </tr>
+<tr>
+          <th scope="row">2</th>
+          <td><a href="https://clck.ru/rdMxs" target="_blank" class="link link--light">Application Integration</a></td>         </tr>
+<tr>
+          <th scope="row">3</th>
+          <td><a href="https://clck.ru/rdMvZ" target="_blank" class="link link--light">Blockchain</a></td>         </tr>
+<tr>
+          <th scope="row">4</th>
+          <td><a href="https://clck.ru/rdMuk" target="_blank" class="link link--light">Cloud Financial Management</a></td>         </tr>
+<tr>
+          <th scope="row">5</th>
+          <td><a href="https://clck.ru/rdMtc" target="_blank" class="link link--light">Compute</a></td>         </tr>
+<tr>
+          <th scope="row">6</th>
+          <td><a href="https://clck.ru/rdMsU" target="_blank" class="link link--light">Containers</a></td>         </tr>
+<tr>
+          <th scope="row">7</th>
+          <td><a href="https://clck.ru/rdMrC" target="_blank" class="link link--light">Database</a></td>         </tr>
+<tr>
+          <th scope="row">8</th>
+          <td><a href="https://clck.ru/rdMpq" target="_blank" class="link link--light">Developer Tools</a></td>         </tr>
+<tr>
+          <th scope="row">9</th>
+          <td><a href="https://clck.ru/rdMoB" target="_blank" class="link link--light">End User Computing</a></td>         </tr>
+<tr>
+          <th scope="row">10</th>
+          <td><a href="https://clck.ru/rdMjk" target="_blank" class="link link--light">Front-End Web & Mobile</a></td>         </tr>
+<tr>
+          <th scope="row">11</th>
+          <td><a href="https://clck.ru/rdMi5" target="_blank" class="link link--light">Internet of Things</a></td>         </tr>
+<tr>
+          <th scope="row">12</th>
+          <td><a href="https://clck.ru/rdMgd" target="_blank" class="link link--light">Machine Learning</a></td>         </tr>
+<tr>
+          <th scope="row">13</th>
+          <td><a href="https://clck.ru/rdMdg" target="_blank" class="link link--light">Management & Governance</a></td>         </tr>
+<tr>
+          <th scope="row">14</th>
+          <td><a href="https://clck.ru/rdMck" target="_blank" class="link link--light">Media Services</a></td>         </tr>
+<tr>
+          <th scope="row">15</th>
+          <td><a href="https://clck.ru/rdMaU" target="_blank" class="link link--light">Migration & Transfer</a></td>         </tr>
+<tr>
+          <th scope="row">16</th>
+          <td><a href="https://clck.ru/rdMZM" target="_blank" class="link link--light">Networking & Content Delivery</a></td>         </tr>
+<tr>
+          <th scope="row">17</th>
+          <td><a href="https://clck.ru/rdMXT" target="_blank" class="link link--light">Quantum Technologies</a></td>         </tr>
+<tr>
+          <th scope="row">18</th>
+          <td><a href="https://clck.ru/rdMWG" target="_blank" class="link link--light">Robotics</a></td>         </tr>
+<tr>
+          <th scope="row">19</th>
+          <td><a href="https://clck.ru/rdMV2" target="_blank" class="link link--light">Satellite</a></td>         </tr>
+<tr>
+          <th scope="row">20</th>
+          <td><a href="https://clck.ru/rdMTD" target="_blank" class="link link--light">Security, Identity, & Compliance</a></td>
+        </tr>
+<tr>
+          <th scope="row">21</th>
+          <td><a href="https://clck.ru/rdMEM" target="_blank" class="link link--light">Storage</a></td>
+        </tr>
+  </tbody>
+</table>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"false aria-controls="collapseFour">
+        GET /Products by text
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+<!--         <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">PARAMETER</th>
+      <th scope="col">REQUIRED</th>
+      <th scope="col">DESCRIPTION</th>
+      <th scope="col">URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+          <th scope="row">1</th>
+          <td>text</td>
+          <td>Required</td>
+          <td>The text you want to search products by</td>
+      <td><a class="link link--light" href="https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=500&item.locale=en_US&q={text}&q_operator=AND&tags.id=!aws-products%23type%23feature&tags.id=!aws-products%23type%23variant" target="_blank">...q={text}...</a></td></tbody>
+</table> -->
+        <table class="table">
+  <tbody>
+    <tr>
+          <td>PARAMETER</td>
+      <td>text</td>
+      </tr>
+    <tr>
+      <td>REQUIRED</td>
+      <td>Required</td>
+      </tr>
+            <tr>
+      <td>DESCRIPTION</td>
+      <td>The text you want to search products by</td>
+      </tr>
+        <tr>
+          <td>URL</td>
+          <td><a class="link link--light" href="https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=500&item.locale=en_US&q={text}&q_operator=AND&tags.id=!aws-products%23type%23feature&tags.id=!aws-products%23type%23variant" target="_blank">...q={text}...</a></td>
+      </tr>
+</table>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item js-section">
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        The response taken from q=API
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <h3 class="section__title">JSON RESPONSE</h3>
+          <p>The Json response from <a class="link link--light" href="https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=500&item.locale=en_US&q=API&q_operator=AND&tags.id=!aws-products%23type%23feature&tags.id=!aws-products%23type%23variant" target="_blank">Link</a></p>
+          <h3 class="section__title">The response taken from q=API</h3>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                {
+  "items": [
+    {
+      "item": {
+        "id": "aws-products#amazon-api-gateway",
+        "locale": "en_US",
+        "directoryId": "aws-products",
+        "name": "amazon-api-gateway",
+        "author": "patkho",
+        "lastUpdatedBy": "patkho",
+        "dateCreated": "2020-07-02T05:15:41+0000",
+        "dateUpdated": "2022-04-01T21:19:32+0000",
+        "additionalFields": {
+          "featuredRank": "1001",
+          "freeTierAvailability": "Free Trial",
+          "productSummary": "Build, deploy, and manage APIs",
+          "launchDate": "2015-07-09",
+          "productUrl": "https://aws.amazon.com/api-gateway/?did=ap_card&trk=ap_card",
+          "productName": "Amazon API Gateway",
+          "productNameLowercase": "amazon api gateway",
+          "productCategory": "Front-End Web & Mobile"
+        }
+      },
+      "tags": [
+        {
+          "id": "GLOBAL#tech-category#serverless",
+          "locale": "en_US",
+          "tagNamespaceId": "GLOBAL#tech-category",
+          "name": "Serverless",
+          "description": "Serverless",
+          "createdBy": "jarfaa",
+          "lastUpdatedBy": "jenbar",
+          "dateCreated": "2021-07-28T18:46:39+0000",
+          "dateUpdated": "2022-02-03T03:35:33+0000"
+        },
+        {
+          "id": "GLOBAL#year#2015",
+          "locale": "en_US",
+          "tagNamespaceId": "GLOBAL#year",
+          "name": "2015",
+          "description": "2015",
+          "createdBy": "jenbar",
+          "lastUpdatedBy": "jenbar",
+          "dateCreated": "2020-06-13T00:07:21+0000",
+          "dateUpdated": "2020-06-13T00:07:21+0000"
+        },
+        {
+          "id": "GLOBAL#free-tier#12-months-free",
+          "locale": "en_US",
+          "tagNamespaceId": "GLOBAL#free-tier",
+          "name": "12 Months Free",
+          "description": "12 Months Free",
+          "createdBy": "jenbar",
+          "lastUpdatedBy": "jenbar",
+          "dateCreated": "2021-05-19T07:48:35+0000",
+          "dateUpdated": "2022-02-03T03:31:19+0000"
+        },
+        {
+          "id": "GLOBAL#product#api-gateway",
+          "locale": "en_US",
+          "tagNamespaceId": "GLOBAL#product",
+          "name": "Amazon API Gateway",
+          "description": "Amazon API Gateway",
+          "createdBy": "jenbar",
+          "lastUpdatedBy": "jenbar",
+          "dateCreated": "2020-03-02T07:01:25+0000",
+          "dateUpdated": "2022-02-03T03:32:16+0000"
+        },
+        {
+          "id": "GLOBAL#free-tier#free-trial",
+          "locale": "en_US",
+          "tagNamespaceId": "GLOBAL#free-tier",
+          "name": "Free Trial",
+          "description": "Free Trial",
+          "createdBy": "jenbar",
+          "lastUpdatedBy": "jenbar",
+          "dateCreated": "2021-05-19T07:48:38+0000",
+          "dateUpdated": "2022-02-03T03:31:20+0000"
+        },
+        {
+          "id": "aws-products#type#service",
+          "locale": "en_US",
+          "tagNamespaceId": "aws-products#type",
+          "name": "Service",
+          "description": "Service",
+          "createdBy": "jenbar",
+          "lastUpdatedBy": "patkho",
+          "dateCreated": "2021-11-17T07:18:04+0000",
+          "dateUpdated": "2022-04-01T20:23:51+0000"
+        },
+        {
+          "id": "GLOBAL#featured-on#home-page",
+          "locale": "en_US",
+          "tagNamespaceId": "GLOBAL#featured-on",
+          "name": "Home Page",
+          "description": "Home Page",
+          "createdBy": "jenbar",
+          "lastUpdatedBy": "jenbar",
+          "dateCreated": "2021-06-04T06:35:53+0000",
+          "dateUpdated": "2022-02-03T03:31:17+0000"
+        },
+        {
+          "id": "GLOBAL#tech-category#networking-content-dev",
+          "locale": "en_US",
+          "tagNamespaceId": "GLOBAL#tech-category",
+          "name": "Networking & Content Delivery",
+          "description": "Networking & Content Delivery",
+          "createdBy": "jenbar",
+          "lastUpdatedBy": "jenbar",
+          "dateCreated": "2020-01-16T17:43:28+0000",
+          "dateUpdated": "2022-02-03T03:35:29+0000"
+        },
+        {
+          "id": "GLOBAL#tech-category#mobile",
+          "locale": "en_US",
+          "tagNamespaceId": "GLOBAL#tech-category",
+          "name": "Front-End Web & Mobile",
+          "description": "Front-End Web & Mobile",
+          "createdBy": "jenbar",
+          "lastUpdatedBy": "jenbar",
+          "dateCreated": "2020-01-16T17:43:26+0000",
+          "dateUpdated": "2022-02-03T03:35:28+0000"
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "aws-products#aws-cloud-control-api",
+        "locale": "en_US",
+        "directoryId": "aws-products",
+        "name": "aws-cloud-control-api",
+        "dateCreated": "2021-11-17T07:18:41+0000",
+        "dateUpdated": "2022-01-05T00:55:08+0000",
+        "additionalFields": {
+          "freeTierAvailability": "<p> </p>",
+          "productSummary": "Manage AWS and third-party cloud infrastructure with consistent APIs",
+          "launchDate": "2021-09-30",
+          "productUrl": "https://aws.amazon.com/cloudcontrolapi/?did=ap_card&trk=ap_card",
+          "productName": "AWS Cloud Control API",
+          "productNameLowercase": "aws cloud control api",
+          "productCategory": "Developer Tools"
+        }
+      },
+      "tags": [
+        {
+          "id": "GLOBAL#product#cloud-control-api",
+          "locale": "en_US",
+          "tagNamespaceId": "GLOBAL#product",
+          "name": "AWS Cloud Control API",
+          "description": "AWS Cloud Control API",
+          "createdBy": "jenbar",
+          "lastUpdatedBy": "jenbar",
+          "dateCreated": "2021-11-17T07:14:40+0000",
+          "dateUpdated": "2022-02-03T03:32:21+0000"
+        },
+        {
+          "id": "GLOBAL#tech-category#devtools",
+          "locale": "en_US",
+          "tagNamespaceId": "GLOBAL#tech-category",
+          "name": "Developer Tools",
+          "description": "Developer Tools",
+          "createdBy": "jenbar",
+          "lastUpdatedBy": "jenbar",
+          "dateCreated": "2020-01-16T17:43:16+0000",
+          "dateUpdated": "2022-02-03T03:35:27+0000"
+        },
+        {
+          "id": "GLOBAL#year#2021",
+          "locale": "en_US",
+          "tagNamespaceId": "GLOBAL#year",
+          "name": "2021",
+          "description": "2021",
+          "createdBy": "jenbar",
+          "lastUpdatedBy": "jenbar",
+          "dateCreated": "2020-06-13T00:07:01+0000",
+          "dateUpdated": "2020-06-13T00:07:05+0000"
+        },
+        {
+          "id": "aws-products#type#service",
+          "locale": "en_US",
+          "tagNamespaceId": "aws-products#type",
+          "name": "Service",
+          "description": "Service",
+          "createdBy": "jenbar",
+          "lastUpdatedBy": "patkho",
+          "dateCreated": "2021-11-17T07:18:04+0000",
+          "dateUpdated": "2022-04-01T20:23:51+0000"
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "aws-products#aws-cloudtrail",
+        "locale": "en_US",
+        "directoryId": "aws-products",
+        "name": "aws-cloudtrail",
+        "dateCreated": "2020-07-02T05:14:15+0000",
+        "dateUpdated": "2022-01-05T00:57:43+0000",
+        "additionalFields": {
+          "freeTierAvailability": "<p> </p>",
+          "productSummary": "Track user activity and API usage",
+          "launchDate": "2013-11-13",
+          "productUrl": "https://aws.amazon.com/cloudtrail/?did=ap_card&trk=ap_card",
+          "productName": "AWS CloudTrail",
+          "productNameLowercase": "aws cloudtrail",
+          "productCategory": "Management & Governance"
+        }
+      },
+      "tags": [
+        {
+          "id": "GLOBAL#product#cloudtrail",
+          "locale": "en_US",
+          "tagNamespaceId": "GLOBAL#product",
+          "name": "AWS CloudTrail",
+          "description": "AWS CloudTrail",
+          "createdBy": "jenbar",
+          "lastUpdatedBy": "jenbar",
+          "dateCreated": "2020-03-02T07:02:05+0000",
+          "dateUpdated": "2022-02-03T03:32:23+0000"
+        },
+        {
+          "id": "GLOBAL#tech-category#mgmt-govern",
+          "locale": "en_US",
+          "tagNamespaceId": "GLOBAL#tech-category",
+          "name": "Management & Governance",
+          "description": "Management & Governance",
+          "createdBy": "jenbar",
+          "lastUpdatedBy": "jenbar",
+          "dateCreated": "2020-01-16T17:43:21+0000",
+          "dateUpdated": "2022-02-03T03:35:28+0000"
+        },
+        {
+          "id": "GLOBAL#free-tier#always-free",
+          "locale": "en_US",
+          "tagNamespaceId": "GLOBAL#free-tier",
+          "name": "Always Free",
+          "description": "Always Free",
+          "createdBy": "jenbar",
+          "lastUpdatedBy": "jenbar",
+          "dateCreated": "2021-05-19T07:48:37+0000",
+          "dateUpdated": "2022-02-03T03:31:20+0000"
+        },
+        {
+          "id": "aws-products#type#service",
+          "locale": "en_US",
+          "tagNamespaceId": "aws-products#type",
+          "name": "Service",
+          "description": "Service",
+          "createdBy": "jenbar",
+          "lastUpdatedBy": "patkho",
+          "dateCreated": "2021-11-17T07:18:04+0000",
+          "dateUpdated": "2022-04-01T20:23:51+0000"
+        },
+        {
+          "id": "GLOBAL#year#2013",
+          "locale": "en_US",
+          "tagNamespaceId": "GLOBAL#year",
+          "name": "2013",
+          "description": "2013",
+          "createdBy": "jenbar",
+          "lastUpdatedBy": "jenbar",
+          "dateCreated": "2020-06-13T00:07:24+0000",
+          "dateUpdated": "2020-06-13T00:07:26+0000"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "count": 3,
+    "totalHits": 3
+  },
+  "fieldTypes": {
+    "imageSrcUrl": "URL",
+    "featuredRank": "Number",
+    "featureFlag": "Text",
+    "freeTierAvailability": "LongText",
+    "subHeadline": "Text",
+    "productSummary": "LongText",
+    "launchDate": "Date",
+    "productUrl": "URL",
+    "productNameLowercase": "Text",
+    "productName": "Text",
+    "productCategory": "Text"
+  }
+}
+              </code>
+            </pre>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </section>
+      
+      </article>
+    </div>
+
+    <footer class="footer">Thanks to<a href="https://amie-chen.com" target="_blank" class="link link--light"> Amie Chen </a>for providing the template for this site.</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="scribbler.js"></script>
+  </body>
+</html>
+                            
+                              
